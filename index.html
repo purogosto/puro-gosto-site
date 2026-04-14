@@ -7,7 +7,7 @@
 
 <style>
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   margin: 0;
   background: #f4f4f4;
 }
@@ -16,16 +16,7 @@ header {
   background: #c62828;
   color: white;
   text-align: center;
-  padding: 30px 10px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 40px;
-}
-
-header p {
-  margin: 5px 0;
+  padding: 30px;
 }
 
 .container {
@@ -39,30 +30,35 @@ section {
   margin-top: 15px;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 5px;
   color: #c62828;
 }
 
 .item {
   display: flex;
   justify-content: space-between;
-  margin: 8px 0;
-  font-weight: bold;
+  align-items: center;
+  margin: 10px 0;
 }
 
-.desc {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 10px;
+.item-left {
+  display: flex;
+  align-items: center;
+}
+
+.item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 .price {
   color: #c62828;
+  font-weight: bold;
 }
 
 .btn {
@@ -74,14 +70,11 @@ h2 {
   border-radius: 8px;
   text-decoration: none;
   margin-top: 10px;
-  font-weight: bold;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  font-size: 13px;
-  color: #777;
 }
 </style>
 
@@ -90,9 +83,8 @@ footer {
 <body>
 
 <header>
-  <h1>🍔 Puro Gosto</h1>
-  <p>Restaurante & Hamburgueria</p>
-  <p>O melhor sabor de Ondjiva</p>
+<h1>🍔 Puro Gosto</h1>
+<p>Restaurante & Hamburgueria</p>
 </header>
 
 <div class="container">
@@ -101,79 +93,182 @@ footer {
 <section>
 <h2>🍔 Hambúrgueres</h2>
 
-<div class="item"><span>Hambúrguer Simples</span><span class="price">2.000 Kz</span></div>
-<div class="desc">Pão, carne, ovo, queijo, fiambre, milho doce e batata palha</div>
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?burger">
+<span>Hambúrguer Simples</span>
+</div>
+<span class="price">2.000 Kz</span>
+</div>
 
-<div class="item"><span>Duplo Gosto</span><span class="price">3.000 Kz</span></div>
-<div class="desc">Pão, carne, ovo, queijo, fiambre, milho doce e batata frita</div>
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?double-burger">
+<span>Duplo Gosto</span>
+</div>
+<span class="price">3.000 Kz</span>
+</div>
 
-<div class="item"><span>Hambúrguer Especial</span><span class="price">5.500 Kz</span></div>
-<div class="desc">2 carnes, 2 queijos, fiambre, batata frita e refrigerante</div>
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?cheeseburger">
+<span>Hambúrguer Especial</span>
+</div>
+<span class="price">5.500 Kz</span>
+</div>
 
-<div class="item"><span>Sandes</span><span class="price">1.000 Kz</span></div>
-<div class="item"><span>Cachorro Quente</span><span class="price">1.500 Kz</span></div>
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?sandwich">
+<span>Sandes</span>
+</div>
+<span class="price">1.000 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?hotdog">
+<span>Cachorro Quente</span>
+</div>
+<span class="price">1.500 Kz</span>
+</div>
+
 </section>
 
 <!-- OUTROS -->
 <section>
-<h2>🍽️ Outros Pratos</h2>
+<h2>🍽️ Outros</h2>
 
-<div class="item"><span>Magoga</span><span class="price">800 Kz</span></div>
-<div class="item"><span>Composto de Rachoni</span><span class="price">3.000 Kz</span></div>
-<div class="item"><span>Churrasco de Galinha</span><span class="price">11.000 Kz</span></div>
-<div class="item"><span>Espetada de Carnes</span><span class="price">1.500 Kz</span></div>
-<div class="item"><span>Faita</span><span class="price">2.000 Kz</span></div>
-<div class="item"><span>Sopa</span><span class="price">1.000 Kz</span></div>
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?african-food">
+<span>Magoga</span>
+</div>
+<span class="price">800 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?rice-meat">
+<span>Composto de Rachon</span>
+</div>
+<span class="price">3.000 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?grilled-chicken">
+<span>Churrasco de Galinha</span>
+</div>
+<span class="price">11.000 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?meat-skewer">
+<span>Espetada de Carne</span>
+</div>
+<span class="price">1.500 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?wrap-food">
+<span>Faita</span>
+</div>
+<span class="price">2.000 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?soup">
+<span>Sopa</span>
+</div>
+<span class="price">1.000 Kz</span>
+</div>
+
 </section>
 
 <!-- BEBIDAS -->
 <section>
 <h2>🥤 Bebidas</h2>
 
-<div class="item"><span>Coca-Cola lata</span><span class="price">1.000 Kz</span></div>
-<div class="item"><span>Sprite lata</span><span class="price">1.000 Kz</span></div>
-<div class="item"><span>Sumol lata</span><span class="price">1.000 Kz</span></div>
-<div class="item"><span>Sumol garrafa</span><span class="price">500 Kz</span></div>
-<div class="item"><span>Top</span><span class="price">300 Kz</span></div>
-<div class="item"><span>Pepsi</span><span class="price">300 Kz</span></div>
-<div class="item"><span>Água pequena</span><span class="price">300 Kz</span></div>
+<div class="item">
+<div class="item-left">
+<img src="coca.jpg">
+<span>Coca-Cola</span>
+</div>
+<span class="price">1.000 Kz</span>
+</div>
 
-<div class="item"><span>CUCA</span><span class="price">500 Kz</span></div>
-<div class="item"><span>EKA</span><span class="price">500 Kz</span></div>
-<div class="item"><span>N'gola</span><span class="price">500 Kz</span></div>
-<div class="item"><span>Booster</span><span class="price">500 Kz</span></div>
-<div class="item"><span>Smirnoff</span><span class="price">1.000 Kz</span></div>
-<div class="item"><span>Speed</span><span class="price">1.000 Kz</span></div>
-</section>
+<div class="item">
+<div class="item-left">
+<img src="eka.jpg">
+<span>EKA</span>
+</div>
+<span class="price">500 Kz</span>
+</div>
 
-<!-- GARRAFAS -->
-<section>
-<h2>🍷 Garrafas</h2>
+<div class="item">
+<div class="item-left">
+<img src="smirnoff.jpg">
+<span>Smirnoff</span>
+</div>
+<span class="price">1.000 Kz</span>
+</div>
 
-<div class="item"><span>Vinho Silk Space</span><span class="price">16.000 Kz</span></div>
-<div class="item"><span>Whiskey simples</span><span class="price">500 Kz</span></div>
-<div class="item"><span>Amarula simples</span><span class="price">500 Kz</span></div>
-<div class="item"><span>Copo de vinho</span><span class="price">1.000 Kz</span></div>
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?beer">
+<span>CUCA</span>
+</div>
+<span class="price">500 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?beer-bottle">
+<span>N'gola</span>
+</div>
+<span class="price">500 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?energy-drink">
+<span>Booster</span>
+</div>
+<span class="price">500 Kz</span>
+</div>
+
+<div class="item">
+<div class="item-left">
+<img src="https://source.unsplash.com/100x100/?energy">
+<span>Speed</span>
+</div>
+<span class="price">1.000 Kz</span>
+</div>
+
 </section>
 
 <!-- CONTACTO -->
 <section>
 <h2>📞 Contacto</h2>
 
-<p>📍 Bairro Naipalala 2, Ondjiva - Cunene</p>
+<p>📍 Naipalala 2 ao lado do banco Millennium Atlântico-Ondjiva</p>
 <p>📞 923 923 735</p>
-<p>🕐 07:30 - 23:00</p>
 
-<a class="btn" href="https://wa.me/244923923735" target="_blank">
+<a class="btn" href="https://wa.me/244923923735">
 💬 Pedir no WhatsApp
 </a>
+
 </section>
 
 </div>
 
 <footer>
-© 2026 Puro Gosto - Ondjiva
+© 2026 Puro Gosto
 </footer>
 
 </body>
-                                        </html>
+  </html>
